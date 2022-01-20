@@ -265,7 +265,6 @@ return {
   -- alpha
   {
     "goolord/alpha-nvim",
-    event = "BufWinEnter",
     config = function()
       require("lvim.core.alpha").setup()
     end,
