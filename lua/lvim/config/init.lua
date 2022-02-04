@@ -69,7 +69,7 @@ local function handle_deprecated_settings()
   end
 
   -- lvim.lsp.override
-  if vim.tbl_contains(vim.tbl_keys(lvim.lsp), "override") then
+  if lvim.lsp.override and #vim.tbl_keys(lvim.lsp.override) > 0 then
     deprecation_notice("lvim.lsp.override", "Use lvim.lsp.automatic_configuration.ignored_servers instead")
   end
 
