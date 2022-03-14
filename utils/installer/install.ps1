@@ -259,7 +259,7 @@ function create_alias {
         return
     }
 
-    $lvim_bin="$INSTALL_PREFIX\bin\lvim.ps1"
+    $lvim_bin = "$INSTALL_PREFIX\bin\lvim.ps1"
     $lvim_alias = Get-Alias lvim -ErrorAction SilentlyContinue
 
     if ($lvim_alias.Definition == $lvim_bin) {
